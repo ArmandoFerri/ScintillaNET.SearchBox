@@ -37,6 +37,16 @@ namespace ScintillaNET_FindReplaceDialog
             // if not yet initialized..
             LocalizationSetting.LoadLocalizations(GetType());
             InitializeComponent();
+            LocalizationSetting.SetCulture(this);
+
+            // localization of these was somewhat challenging..
+            toolTip1.SetToolTip(cmdRecentFindR, LocalizationSetting.GetMessage("txtClockToolTip", "Show a list of recent search strings"));
+            toolTip1.SetToolTip(cmdRecentReplace, LocalizationSetting.GetMessage("txtClockToolTip", "Show a list of recent search strings"));
+            toolTip1.SetToolTip(cmdRecentFindF, LocalizationSetting.GetMessage("txtClockToolTip", "Show a list of recent search strings"));
+
+            toolTip1.SetToolTip(cmdExtCharAndRegExFindF, LocalizationSetting.GetMessage("textExtChars", "Show a list of extended characters"));
+            toolTip1.SetToolTip(cmdExtCharAndRegExFindR, LocalizationSetting.GetMessage("textExtChars", "Show a list of extended characters"));
+            toolTip1.SetToolTip(cmdExtCharAndRegExReplace, LocalizationSetting.GetMessage("textExtChars", "Show a list of extended characters"));
 
             _autoPosition = true;
             _mruFind = new List<string>();

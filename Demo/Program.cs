@@ -17,7 +17,7 @@ namespace Demo
         static void Main()
         {
             // set the locale..
-            // LocalizationSetting.Locale = "fi";
+            //LocalizationSetting.Locale = "fi";
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

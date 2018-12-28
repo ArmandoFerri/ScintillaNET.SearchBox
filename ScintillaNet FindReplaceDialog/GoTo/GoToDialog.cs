@@ -146,6 +146,7 @@ namespace ScintillaNET_FindReplaceDialog
             // if not yet initialized..
             LocalizationSetting.LoadLocalizations(GetType());
             InitializeComponent();
+            LocalizationSetting.SetCulture(this);
         }
 
         #endregion Constructors

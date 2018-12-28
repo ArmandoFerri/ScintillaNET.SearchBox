@@ -117,14 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textExtChars" xml:space="preserve">
+    <value>Näytä lista laajennetuista merkeistä</value>
+  </data>
   <data name="txtClearHistory" xml:space="preserve">
     <value>Tyhjennä historia</value>
+  </data>
+  <data name="txtClockToolTip" xml:space="preserve">
+    <value>Näytä lista aiemmista hakulauseista</value>
   </data>
   <data name="txtErrorInRegexp" xml:space="preserve">
     <value>Virhe säännöllisessä lausekkeessa: </value>
   </data>
   <data name="txtGotoLineError" xml:space="preserve">
-    <value>Rivin arvo # pitää olla suurempi kuin 0 ja pienempi kuin</value>
+    <value>Rivin arvo # pitää olla suurempi kuin 0 ja pienempi kuin </value>
   </data>
   <data name="txtGotoLineNumericError" xml:space="preserve">
     <value>Rivin arvo # pitää olla numeerinen</value>

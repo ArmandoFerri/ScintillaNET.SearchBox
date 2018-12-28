@@ -225,10 +225,26 @@
             An indicator if the localized messages have been loaded from the resource.
             </summary>
         </member>
-        <member name="M:ScintillaNET_FindReplaceDialog.LocalizationSetting.Init">
+        <member name="M:ScintillaNET_FindReplaceDialog.LocalizationSetting.SetCulture(System.Windows.Forms.Form)">
             <summary>
-            Initializes the thread culture to match the given locale.
+            Localizes a form to match specific culture.
             </summary>
+            <param name="form">A form to localize.</param>
+        </member>
+        <member name="M:ScintillaNET_FindReplaceDialog.LocalizationSetting.GetControlControls(System.Windows.Forms.Control,System.Windows.Forms.Form)">
+            <summary>
+            Iterates through all the controls on the form.
+            </summary>
+            <param name="control">A control to start iterating from.</param>
+            <param name="form">A form to which the controls belong to.</param>
+            <returns>A collection of controls.</returns>
+        </member>
+        <member name="M:ScintillaNET_FindReplaceDialog.LocalizationSetting.GetComponents(System.Windows.Forms.Form)">
+            <summary>
+            Gets the components on the form through reflection.
+            </summary>
+            <param name="form">A form which controls to get.</param>
+            <returns>A collection of components the form has.</returns>
         </member>
         <member name="F:ScintillaNET_FindReplaceDialog.LocalizationSetting.messages">
             <summary>

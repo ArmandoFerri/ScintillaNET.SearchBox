@@ -117,8 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textExtChars" xml:space="preserve">
+    <value>Show a list of extended characters</value>
+  </data>
   <data name="txtClearHistory" xml:space="preserve">
     <value>Clear History</value>
+  </data>
+  <data name="txtClockToolTip" xml:space="preserve">
+    <value>Show a list of recent search strings</value>
   </data>
   <data name="txtErrorInRegexp" xml:space="preserve">
     <value>Error in Regular Expression: </value>

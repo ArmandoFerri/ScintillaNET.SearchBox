@@ -421,6 +421,6 @@
     <value>17, 17</value>
   </data>
   <data name="GotoLineError1" xml:space="preserve">
-    <value />
+    <value>Go to line # must be greater than 0 and less than </value>
   </data>
 </root>

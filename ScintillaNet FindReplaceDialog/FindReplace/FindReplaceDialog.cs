@@ -3,8 +3,11 @@ namespace ScintillaNET_FindReplaceDialog
     using ScintillaNET;
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel;
     using System.Diagnostics;
     using System.Drawing;
+    using System.Globalization;
+    using System.Reflection;
     using System.Text.RegularExpressions;
     using System.Windows.Forms;
 
@@ -28,9 +31,11 @@ namespace ScintillaNET_FindReplaceDialog
         public delegate void KeyPressedHandler(object sender, KeyEventArgs e);
 
         #region Constructors
-
         public FindReplaceDialog()
         {
+            // this is called to initialize the localization procedure
+            // if not yet initialized..
+            LocalizationSetting.LoadLocalizations(GetType());
             InitializeComponent();
 
             _autoPosition = true;
@@ -153,7 +158,7 @@ namespace ScintillaNET_FindReplaceDialog
                 }
                 catch (ArgumentException ex)
                 {
-                    lblStatus.Text = "Error in Regular Expression: " + ex.Message;
+                    lblStatus.Text = LocalizationSetting.GetMessage("txtErrorInRegexp", "Error in Regular Expression: ") + ex.Message;
                     return;
                 }
 
@@ -197,7 +202,7 @@ namespace ScintillaNET_FindReplaceDialog
 
             #endregion
 
-            lblStatus.Text = "Total found: " + foundCount.ToString();
+           lblStatus.Text = LocalizationSetting.GetMessage("txtTotalFound", "Total found: ") + foundCount.ToString();
         }
 
         private void btnFindNext_Click(object sender, EventArgs e)
@@ -230,7 +235,7 @@ namespace ScintillaNET_FindReplaceDialog
                 }
                 catch (ArgumentException ex)
                 {
-                    lblStatus.Text = "Error in Regular Expression: " + ex.Message;
+                    lblStatus.Text = LocalizationSetting.GetMessage("txtErrorInRegexp", "Error in Regular Expression: ") + ex.Message;
                     return;
                 }
 
@@ -276,7 +281,7 @@ namespace ScintillaNET_FindReplaceDialog
 
             #endregion
 
-            lblStatus.Text = "Total Replaced: " + foundCount.ToString();
+            lblStatus.Text = LocalizationSetting.GetMessage("txtTotalReplaced", "Total Replaced: ") + foundCount.ToString();
         }
 
         private void btnReplaceNext_Click(object sender, EventArgs e)
@@ -299,22 +304,22 @@ namespace ScintillaNET_FindReplaceDialog
             }
             catch (ArgumentException ex)
             {
-                lblStatus.Text = "Error in Regular Expression: " + ex.Message;
+                lblStatus.Text = LocalizationSetting.GetMessage("txtErrorInRegexp", "Error in Regular Expression: ") + ex.Message;
                 return;
             }
 
             if (nextRange.cpMin == nextRange.cpMax)
             {
-                lblStatus.Text = "Match could not be found";
+                lblStatus.Text = LocalizationSetting.GetMessage("txtMatchNotFound", "Match could not be found");
             }
             else
             {
                 if (nextRange.cpMin > _scintilla.AnchorPosition)
                 {
                     if (chkSearchSelectionR.Checked)
-                        lblStatus.Text = "Search match wrapped to the beginning of the selection";
+                        lblStatus.Text = LocalizationSetting.GetMessage("txtSearchWrapBeginningSel", "Search match wrapped to the beginning of the selection");
                     else
-                        lblStatus.Text = "Search match wrapped to the beginning of the document";
+                        lblStatus.Text = LocalizationSetting.GetMessage("txtSearchWrapBeginningDoc", "Search match wrapped to the beginning of the document");
                 }
 
                 _scintilla.SetSel(nextRange.cpMin, nextRange.cpMax);
@@ -365,7 +370,7 @@ namespace ScintillaNET_FindReplaceDialog
                 newItem.Tag = item;
             }
             mnuRecentFindF.Items.Add("-");
-            mnuRecentFindF.Items.Add("Clear History");
+            mnuRecentFindF.Items.Add(LocalizationSetting.GetMessage("txtClearHistory", "Clear History"));
             mnuRecentFindF.Show(cmdRecentFindF.PointToScreen(cmdRecentFindF.ClientRectangle.Location));
         }
 
@@ -378,7 +383,7 @@ namespace ScintillaNET_FindReplaceDialog
                 newItem.Tag = item;
             }
             mnuRecentFindR.Items.Add("-");
-            mnuRecentFindR.Items.Add("Clear History");
+            mnuRecentFindF.Items.Add(LocalizationSetting.GetMessage("txtClearHistory", "Clear History"));
             mnuRecentFindR.Show(cmdRecentFindR.PointToScreen(cmdRecentFindR.ClientRectangle.Location));
         }
 
@@ -391,7 +396,7 @@ namespace ScintillaNET_FindReplaceDialog
                 newItem.Tag = item;
             }
             mnuRecentReplace.Items.Add("-");
-            mnuRecentReplace.Items.Add("Clear History");
+            mnuRecentFindF.Items.Add(LocalizationSetting.GetMessage("txtClearHistory", "Clear History"));
             mnuRecentReplace.Show(cmdRecentReplace.PointToScreen(cmdRecentReplace.ClientRectangle.Location));
         }
 
@@ -532,22 +537,22 @@ namespace ScintillaNET_FindReplaceDialog
             }
             catch (ArgumentException ex)
             {
-                lblStatus.Text = "Error in Regular Expression: " + ex.Message;
+                lblStatus.Text = LocalizationSetting.GetMessage("txtErrorInRegexp", "Error in Regular Expression: ") + ex.Message;
                 return;
             }
 
             if (foundRange.cpMin == foundRange.cpMax)
             {
-                lblStatus.Text = "Match could not be found";
+                lblStatus.Text = LocalizationSetting.GetMessage("txtMatchNotFound", "Match could not be found");
             }
             else
             {
                 if (foundRange.cpMin < Scintilla.AnchorPosition)
                 {
                     if (chkSearchSelectionF.Checked)
-                        lblStatus.Text = "Search match wrapped to the beginning of the selection";
+                        lblStatus.Text = LocalizationSetting.GetMessage("txtSearchWrapBeginningSel", "Search match wrapped to the beginning of the selection");
                     else
-                        lblStatus.Text = "Search match wrapped to the beginning of the document";
+                        lblStatus.Text = LocalizationSetting.GetMessage("txtSearchWrapBeginningDoc", "Search match wrapped to the beginning of the document");
                 }
 
                 Scintilla.SetSel(foundRange.cpMin, foundRange.cpMax);
@@ -571,22 +576,22 @@ namespace ScintillaNET_FindReplaceDialog
             }
             catch (ArgumentException ex)
             {
-                lblStatus.Text = "Error in Regular Expression: " + ex.Message;
+                lblStatus.Text = LocalizationSetting.GetMessage("txtErrorInRegexp", "Error in Regular Expression: ") + ex.Message;
                 return;
             }
 
             if (foundRange.cpMin == foundRange.cpMax)
             {
-                lblStatus.Text = "Match could not be found";
+                lblStatus.Text = LocalizationSetting.GetMessage("txtMatchNotFound", "Match could not be found");
             }
             else
             {
                 if (foundRange.cpMin > Scintilla.CurrentPosition)
                 {
                     if (chkSearchSelectionF.Checked)
-                        lblStatus.Text = "Search match wrapped to the _end of the selection";
+                        lblStatus.Text = LocalizationSetting.GetMessage("txtSearchWrapEndSel", "Search match wrapped to the end of the selection");
                     else
-                        lblStatus.Text = "Search match wrapped to the _end of the document";
+                        lblStatus.Text = LocalizationSetting.GetMessage("txtSearchWrapEndDoc", "Search match wrapped to the end of the document");
                 }
 
                 Scintilla.SetSel(foundRange.cpMin, foundRange.cpMax);
@@ -750,22 +755,22 @@ namespace ScintillaNET_FindReplaceDialog
             }
             catch (ArgumentException ex)
             {
-                lblStatus.Text = "Error in Regular Expression: " + ex.Message;
+                lblStatus.Text = LocalizationSetting.GetMessage("txtErrorInRegexp", "Error in Regular Expression: ") + ex.Message;
                 return;
             }
 
             if (nextRange.cpMin == nextRange.cpMax)
             {
-                lblStatus.Text = "Match could not be found";
+                lblStatus.Text = LocalizationSetting.GetMessage("txtMatchNotFound", "Match could not be found");
             }
             else
             {
                 if (nextRange.cpMin < Scintilla.AnchorPosition)
                 {
                     if (chkSearchSelectionR.Checked)
-                        lblStatus.Text = "Search match wrapped to the beginning of the selection";
+                        lblStatus.Text = LocalizationSetting.GetMessage("txtSearchWrapBeginningSel", "Search match wrapped to the beginning of the selection");
                     else
-                        lblStatus.Text = "Search match wrapped to the beginning of the document";
+                        lblStatus.Text = LocalizationSetting.GetMessage("txtSearchWrapBeginningDoc", "Search match wrapped to the beginning of the document");
                 }
 
                 Scintilla.SetSel(nextRange.cpMin, nextRange.cpMax);
@@ -1020,7 +1025,7 @@ namespace ScintillaNET_FindReplaceDialog
         private void mnuRecentFindF_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
             //Insert the string value held in the menu items Tag field (\t, \n, etc.)
-            if (e.ClickedItem.Text == "Clear History")
+            if (e.ClickedItem.Text == LocalizationSetting.GetMessage("txtClearHistory", "Clear History"))
             {
                 MruFind.Clear();
             }
@@ -1033,7 +1038,7 @@ namespace ScintillaNET_FindReplaceDialog
         private void mnuRecentFindR_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
             //Insert the string value held in the menu items Tag field (\t, \n, etc.)
-            if (e.ClickedItem.Text == "Clear History")
+            if (e.ClickedItem.Text == LocalizationSetting.GetMessage("txtClearHistory", "Clear History"))
             {
                 MruFind.Clear();
             }
@@ -1046,7 +1051,7 @@ namespace ScintillaNET_FindReplaceDialog
         private void mnuRecentReplace_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
             //Insert the string value held in the menu items Tag field (\t, \n, etc.)
-            if (e.ClickedItem.Text == "Clear History")
+            if (e.ClickedItem.Text == LocalizationSetting.GetMessage("txtClearHistory", "Clear History"))
             {
                 MruReplace.Clear();
             }

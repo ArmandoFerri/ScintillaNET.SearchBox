@@ -84,10 +84,10 @@
                 int endLine = Scintilla.LineFromPosition(item.cpMax);
 
                 if (startLine == endLine)
-                {
-                    string resultsLinePrefix = string.Format("Line {0}: ", startLine + 1);
+                {                    
+                    string resultsLinePrefix = string.Format(LocalizationSetting.GetMessage("txtLine1", "Line {0}: "), startLine + 1);
 
-                    FindResultsScintilla.AppendText(string.Format("{0}{1}",
+                    FindResultsScintilla.AppendText(string.Format(LocalizationSetting.GetMessage("txtLine2", "{ 0}{1}"),
                         resultsLinePrefix, Scintilla.Lines[startLine].Text));
                 }
             }
@@ -101,7 +101,7 @@
 
                 if (startLine == endLine)
                 {
-                    string resultsLinePrefix = string.Format("Line {0}: ", startLine + 1);
+                    string resultsLinePrefix = string.Format(LocalizationSetting.GetMessage("txtLine1", "Line {0}: "), startLine + 1);
 
                     int LinePos = Scintilla.Lines[startLine].Position;
                     int startPosInLine = item.cpMin - LinePos;

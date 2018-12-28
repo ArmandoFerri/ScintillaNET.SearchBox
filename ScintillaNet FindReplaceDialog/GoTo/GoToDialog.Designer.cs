@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GoToDialog));
             this.lblCurrentLine = new System.Windows.Forms.Label();
             this.txtCurrentLine = new System.Windows.Forms.TextBox();
             this.err = new System.Windows.Forms.ErrorProvider(this.components);
@@ -43,86 +44,86 @@
             // 
             // lblCurrentLine
             // 
-            this.lblCurrentLine.AutoSize = true;
-            this.lblCurrentLine.Location = new System.Drawing.Point(9, 13);
+            resources.ApplyResources(this.lblCurrentLine, "lblCurrentLine");
+            this.err.SetError(this.lblCurrentLine, resources.GetString("lblCurrentLine.Error"));
+            this.err.SetIconAlignment(this.lblCurrentLine, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("lblCurrentLine.IconAlignment"))));
+            this.err.SetIconPadding(this.lblCurrentLine, ((int)(resources.GetObject("lblCurrentLine.IconPadding"))));
             this.lblCurrentLine.Name = "lblCurrentLine";
-            this.lblCurrentLine.Size = new System.Drawing.Size(102, 13);
-            this.lblCurrentLine.TabIndex = 0;
-            this.lblCurrentLine.Text = "&Current line number";
             // 
             // txtCurrentLine
             // 
-            this.txtCurrentLine.Location = new System.Drawing.Point(132, 8);
+            resources.ApplyResources(this.txtCurrentLine, "txtCurrentLine");
+            this.err.SetError(this.txtCurrentLine, resources.GetString("txtCurrentLine.Error"));
+            this.err.SetIconAlignment(this.txtCurrentLine, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("txtCurrentLine.IconAlignment"))));
+            this.err.SetIconPadding(this.txtCurrentLine, ((int)(resources.GetObject("txtCurrentLine.IconPadding"))));
             this.txtCurrentLine.Name = "txtCurrentLine";
             this.txtCurrentLine.ReadOnly = true;
-            this.txtCurrentLine.Size = new System.Drawing.Size(63, 21);
-            this.txtCurrentLine.TabIndex = 1;
             // 
             // err
             // 
             this.err.ContainerControl = this;
+            resources.ApplyResources(this.err, "err");
             // 
             // txtMaxLine
             // 
-            this.txtMaxLine.Location = new System.Drawing.Point(132, 33);
+            resources.ApplyResources(this.txtMaxLine, "txtMaxLine");
+            this.err.SetError(this.txtMaxLine, resources.GetString("txtMaxLine.Error"));
+            this.err.SetIconAlignment(this.txtMaxLine, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("txtMaxLine.IconAlignment"))));
+            this.err.SetIconPadding(this.txtMaxLine, ((int)(resources.GetObject("txtMaxLine.IconPadding"))));
             this.txtMaxLine.Name = "txtMaxLine";
             this.txtMaxLine.ReadOnly = true;
-            this.txtMaxLine.Size = new System.Drawing.Size(63, 21);
-            this.txtMaxLine.TabIndex = 3;
             // 
             // lblMaxLine
             // 
-            this.lblMaxLine.AutoSize = true;
-            this.lblMaxLine.Location = new System.Drawing.Point(9, 37);
+            resources.ApplyResources(this.lblMaxLine, "lblMaxLine");
+            this.err.SetError(this.lblMaxLine, resources.GetString("lblMaxLine.Error"));
+            this.err.SetIconAlignment(this.lblMaxLine, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("lblMaxLine.IconAlignment"))));
+            this.err.SetIconPadding(this.lblMaxLine, ((int)(resources.GetObject("lblMaxLine.IconPadding"))));
             this.lblMaxLine.Name = "lblMaxLine";
-            this.lblMaxLine.Size = new System.Drawing.Size(117, 13);
-            this.lblMaxLine.TabIndex = 2;
-            this.lblMaxLine.Text = "&Maxmimum line number";
             // 
             // txtGotoLine
             // 
-            this.txtGotoLine.Location = new System.Drawing.Point(132, 58);
+            resources.ApplyResources(this.txtGotoLine, "txtGotoLine");
+            this.err.SetError(this.txtGotoLine, resources.GetString("txtGotoLine.Error"));
+            this.err.SetIconAlignment(this.txtGotoLine, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("txtGotoLine.IconAlignment"))));
+            this.err.SetIconPadding(this.txtGotoLine, ((int)(resources.GetObject("txtGotoLine.IconPadding"))));
             this.txtGotoLine.Name = "txtGotoLine";
-            this.txtGotoLine.Size = new System.Drawing.Size(63, 21);
-            this.txtGotoLine.TabIndex = 5;
             // 
             // lblGotoLine
             // 
-            this.lblGotoLine.AutoSize = true;
-            this.lblGotoLine.Location = new System.Drawing.Point(9, 61);
+            resources.ApplyResources(this.lblGotoLine, "lblGotoLine");
+            this.err.SetError(this.lblGotoLine, resources.GetString("lblGotoLine.Error"));
+            this.err.SetIconAlignment(this.lblGotoLine, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("lblGotoLine.IconAlignment"))));
+            this.err.SetIconPadding(this.lblGotoLine, ((int)(resources.GetObject("lblGotoLine.IconPadding"))));
             this.lblGotoLine.Name = "lblGotoLine";
-            this.lblGotoLine.Size = new System.Drawing.Size(91, 13);
-            this.lblGotoLine.TabIndex = 4;
-            this.lblGotoLine.Text = "&Go to line number";
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(39, 85);
+            resources.ApplyResources(this.btnOK, "btnOK");
+            this.err.SetError(this.btnOK, resources.GetString("btnOK.Error"));
+            this.err.SetIconAlignment(this.btnOK, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("btnOK.IconAlignment"))));
+            this.err.SetIconPadding(this.btnOK, ((int)(resources.GetObject("btnOK.IconPadding"))));
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
-            this.btnOK.TabIndex = 6;
-            this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // btnCancel
             // 
+            resources.ApplyResources(this.btnCancel, "btnCancel");
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(120, 85);
+            this.err.SetError(this.btnCancel, resources.GetString("btnCancel.Error"));
+            this.err.SetIconAlignment(this.btnCancel, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("btnCancel.IconAlignment"))));
+            this.err.SetIconPadding(this.btnCancel, ((int)(resources.GetObject("btnCancel.IconPadding"))));
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 7;
-            this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // GoToDialog
             // 
             this.AcceptButton = this.btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(210, 113);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.txtGotoLine);
@@ -131,15 +132,12 @@
             this.Controls.Add(this.lblMaxLine);
             this.Controls.Add(this.txtCurrentLine);
             this.Controls.Add(this.lblCurrentLine);
-            this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "GoToDialog";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Go To Line";
             this.Activated += new System.EventHandler(this.GoToDialog_Activated);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GoToDialog_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.err)).EndInit();

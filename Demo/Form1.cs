@@ -8,6 +8,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -19,7 +20,14 @@ namespace Demo
 
 		public Form1()
 		{
-			InitializeComponent();
+            /* Set the localization HERE (!)
+            LocalizationSetting.Locale = "fi"; // for Finish
+            LocalizationSetting.Locale = "en"; // for English
+            LocalizationSetting.Locale = "xx"; // TODO:: Other languages by the community..
+            LocalizationSetting.Init();
+            */
+
+            InitializeComponent();
 			scintilla1.Styles[Style.Default].Size = 10;
 
 			MyFindReplace = new FindReplace();

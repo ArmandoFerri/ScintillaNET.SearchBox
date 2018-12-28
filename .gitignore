@@ -3,3 +3,15 @@
 *.user
 *.sln.docstates
 obj/
+*.lock
+/.vs
+*.exe
+/ScintillaNet FindReplaceDialog/bin
+/ScintillaNet FindReplaceDialog/*.nupkg
+.vs
+/Demo/bin/Debug/ScintillaNET.dll
+/Demo/bin/Debug/ScintillaNET.xml
+*.dll
+/Demo/bin/Release/ScintillaNET.xml
+/Demo/bin/Release/ScintillaNET_FindReplaceDialog.xml
+/Demo/bin/Debug/Demo.exe.config

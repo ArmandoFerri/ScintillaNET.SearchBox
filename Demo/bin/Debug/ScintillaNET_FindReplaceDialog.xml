@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>ScintillaNET FindReplaceDialog</name>
+        <name>ScintillaNET_FindReplaceDialog</name>
     </assembly>
     <members>
         <member name="T:ScintillaNET_FindReplaceDialog.CharacterRange">
@@ -205,6 +205,50 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:ScintillaNET_FindReplaceDialog.LocalizationSetting">
+            <summary>
+            An utility class to localize the dialog(s).
+            </summary>
+        </member>
+        <member name="P:ScintillaNET_FindReplaceDialog.LocalizationSetting.Locale">
+            <summary>
+            Gets or sets the locale for the class library and for the host application's threads.
+            </summary>
+        </member>
+        <member name="F:ScintillaNET_FindReplaceDialog.LocalizationSetting.messageResources">
+            <summary>
+            Translated messages for the class library.
+            </summary>
+        </member>
+        <member name="F:ScintillaNET_FindReplaceDialog.LocalizationSetting.localizedMessagesLoaded">
+            <summary>
+            An indicator if the localized messages have been loaded from the resource.
+            </summary>
+        </member>
+        <member name="M:ScintillaNET_FindReplaceDialog.LocalizationSetting.Init">
+            <summary>
+            Initializes the thread culture to match the given locale.
+            </summary>
+        </member>
+        <member name="F:ScintillaNET_FindReplaceDialog.LocalizationSetting.messages">
+            <summary>
+            The list of localized messages in the library.
+            </summary>
+        </member>
+        <member name="M:ScintillaNET_FindReplaceDialog.LocalizationSetting.LoadLocalizations(System.Type)">
+            <summary>
+            Loads the localized messages into a cache to be used by the library.
+            </summary>
+            <param name="type">A type for which this assembly belongs to.</param>
+        </member>
+        <member name="M:ScintillaNET_FindReplaceDialog.LocalizationSetting.GetMessage(System.String,System.String)">
+            <summary>
+            Gets a localized message for the selected culture.
+            </summary>
+            <param name="name">The name of the message.</param>
+            <param name="defaultValue">The default value for the message.</param>
+            <returns>A localized message for the selected culture if found; otherwise <paramref name="defaultValue"/>.</returns>
+        </member>
         <member name="T:ScintillaNET_FindReplaceDialog.Properties.Resources">
             <summary>
               A strongly-typed resource class, for looking up localized strings, etc.
@@ -226,22 +270,27 @@
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:ScintillaNET_FindReplaceDialog.Properties.Resources.DeleteHS">
+        <member name="P:ScintillaNET_FindReplaceDialog.Properties.Resources.DownButton_sb">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:ScintillaNET_FindReplaceDialog.Properties.Resources.GoToNextMessage">
+        <member name="P:ScintillaNET_FindReplaceDialog.Properties.Resources.Highlighter_sb">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:ScintillaNET_FindReplaceDialog.Properties.Resources.GoToPreviousMessage">
+        <member name="P:ScintillaNET_FindReplaceDialog.Properties.Resources.txtTotalFound">
+            <summary>
+              Looks up a localized string similar to Total found:.
+            </summary>
+        </member>
+        <member name="P:ScintillaNET_FindReplaceDialog.Properties.Resources.UpButton_sb">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:ScintillaNET_FindReplaceDialog.Properties.Resources.LineColorHS">
+        <member name="P:ScintillaNET_FindReplaceDialog.Properties.Resources.XToCloseButton_sb">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>

@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("ScintillaNet FindReplaceDialog")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A Find and Replace Dialog + Goto Dialog + Incremental Search for ScintillaNET v3.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Armando.Ferri, VPKSoft")]
 [assembly: AssemblyProduct("ScintillaNet FindReplaceDialog")]
-[assembly: AssemblyCopyright("Copyright ©  2016-2017")]
+[assembly: AssemblyCopyright("Copyright © Armando.Ferri 2016-2018, VPKSoft")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.4.0.*")]
-[assembly: AssemblyFileVersion("1.4.0")]
+[assembly: AssemblyVersion("1.0.3.1")]
+[assembly: AssemblyFileVersion("1.0.3.1")]

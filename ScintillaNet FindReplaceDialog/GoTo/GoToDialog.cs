@@ -26,10 +26,12 @@ namespace ScintillaNET_FindReplaceDialog
         {
             if (int.TryParse(txtGotoLine.Text, out _gotoLineNumber))
             {
+                
                 //	Line #s are 0 based but the users don't think that way
                 _gotoLineNumber--;
                 if (_gotoLineNumber < 0 || _gotoLineNumber >= _maximumLineNumber)
-                    err.SetError(txtGotoLine, "Go to line # must be greater than 0 and less than " + (_maximumLineNumber + 1).ToString());
+                    err.SetError(txtGotoLine, LocalizationSetting.GetMessage("txtGotoLineError", "Go to line # must be greater than 0 and less than ")
+                        + (_maximumLineNumber + 1).ToString());
                 else
                 {
                     _scintilla.Lines[_gotoLineNumber].Goto();
@@ -40,7 +42,8 @@ namespace ScintillaNET_FindReplaceDialog
             }
             else
             {
-                err.SetError(txtGotoLine, "Go to line # must be a numeric value");
+                err.SetError(txtGotoLine, 
+                    LocalizationSetting.GetMessage("txtGotoLineNumericError", "Go to line # must be a numeric value"));
             }
         }
 
@@ -139,6 +142,9 @@ namespace ScintillaNET_FindReplaceDialog
 
         public GoToDialog()
         {
+            // this is called to initialize the localization procedure
+            // if not yet initialized..
+            LocalizationSetting.LoadLocalizations(GetType());
             InitializeComponent();
         }
 

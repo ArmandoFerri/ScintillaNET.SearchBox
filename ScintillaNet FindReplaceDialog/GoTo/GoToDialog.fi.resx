@@ -142,7 +142,4 @@
   <data name="lblCurrentLine.Text" xml:space="preserve">
     <value>Nykyinen rivinumero</value>
   </data>
-  <data name="GotoLineError1" xml:space="preserve">
-    <value />
-  </data>
 </root>

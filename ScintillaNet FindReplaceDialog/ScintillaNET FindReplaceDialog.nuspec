@@ -15,4 +15,8 @@
     <copyright>Copyright © Armando.Ferri, VPKSoft 2018</copyright>
     <tags>wrapper scintilla search replace</tags>
   </metadata>
+  <files>
+    <file src="bin\Release\en\ScintillaNET_FindReplaceDialog.resources.dll" target="lib\net40-client\en" />
+    <file src="bin\Release\fi\ScintillaNET_FindReplaceDialog.resources.dll" target="lib\net40-client\fi" />
+  </files>
 </package>

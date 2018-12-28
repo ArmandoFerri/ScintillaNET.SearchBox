@@ -15,3 +15,4 @@ obj/
 /Demo/bin/Release/ScintillaNET.xml
 /Demo/bin/Release/ScintillaNET_FindReplaceDialog.xml
 /Demo/bin/Debug/Demo.exe.config
+*.nupkg

@@ -286,6 +286,9 @@
   <data name="grpOptionsF.Size" type="System.Drawing.Size, System.Drawing">
     <value>543, 77</value>
   </data>
+  <data name="grpOptionsF.Text" xml:space="preserve">
+    <value>Haun tyyppi</value>
+  </data>
   <data name="lblSearchTypeF.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 13</value>
   </data>
@@ -480,6 +483,9 @@
   </data>
   <data name="pnlRegexpOptionsR.Size" type="System.Drawing.Size, System.Drawing">
     <value>537, 57</value>
+  </data>
+  <data name="grdOptionsR.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 94</value>
   </data>
   <data name="grdOptionsR.Size" type="System.Drawing.Size, System.Drawing">
     <value>543, 77</value>

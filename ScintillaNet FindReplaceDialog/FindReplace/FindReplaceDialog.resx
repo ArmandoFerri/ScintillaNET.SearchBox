@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="rdoRegexF.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="grdOptionsR.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 94</value>
@@ -182,6 +179,9 @@
   <data name="cmdExtCharAndRegExFindR.ToolTip" xml:space="preserve">
     <value>Show a list of extended characters</value>
   </data>
+  <data name="chkIgnorePatternWhitespaceF.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 17</value>
+  </data>
   <data name="lblFindR.Size" type="System.Drawing.Size, System.Drawing">
     <value>27, 13</value>
   </data>
@@ -215,8 +215,11 @@
   <data name="&gt;&gt;rdoExtendedR.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="btnFindPreviousF.Text" xml:space="preserve">
-    <value>Find &amp;Previous</value>
+  <data name="pnlRegexpOptionsR.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="chkWrapF.Location" type="System.Drawing.Point, System.Drawing">
+    <value>375, 52</value>
   </data>
   <data name="chkMarkLine.Size" type="System.Drawing.Size, System.Drawing">
     <value>71, 17</value>
@@ -263,6 +266,9 @@
   </data>
   <data name="btnReplacePrevious.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
+  </data>
+  <data name="&gt;&gt;chkMultilineF.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;chkHighlightMatches.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -336,14 +342,14 @@
   <data name="&gt;&gt;toolStripMenuItem4.Name" xml:space="preserve">
     <value>toolStripMenuItem4</value>
   </data>
-  <data name="nameToolStripMenuItem.Text" xml:space="preserve">
-    <value>$(Name) Named Group</value>
-  </data>
   <data name="&gt;&gt;toolStripMenuItem3.Name" xml:space="preserve">
     <value>toolStripMenuItem3</value>
   </data>
   <data name="&gt;&gt;btnReplaceAll.ZOrder" xml:space="preserve">
     <value>9</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem21.Name" xml:space="preserve">
+    <value>toolStripMenuItem21</value>
   </data>
   <data name="toolStripMenuItem26.Size" type="System.Drawing.Size, System.Drawing">
     <value>260, 22</value>
@@ -365,9 +371,6 @@
   </data>
   <data name="mnuRegExCharFindR.Size" type="System.Drawing.Size, System.Drawing">
     <value>261, 424</value>
-  </data>
-  <data name="chkSearchSelectionR.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
   </data>
   <data name="btnFindNextR.Text" xml:space="preserve">
     <value>Find Next</value>
@@ -413,6 +416,9 @@
   </data>
   <data name="rdoExtendedF.Size" type="System.Drawing.Size, System.Drawing">
     <value>139, 17</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem54.Name" xml:space="preserve">
+    <value>toolStripMenuItem54</value>
   </data>
   <data name="&gt;&gt;toolStripMenuItem9.Name" xml:space="preserve">
     <value>toolStripMenuItem9</value>
@@ -515,9 +521,6 @@
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FindReplaceDialog</value>
-  </data>
-  <data name="chkIgnorePatternWhitespaceR.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="tpgReplace.Text" xml:space="preserve">
     <value>Replace</value>
@@ -645,6 +648,9 @@
   <data name="&gt;&gt;chkEcmaScriptF.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="&gt;&gt;mnuRecentReplace.Name" xml:space="preserve">
+    <value>mnuRecentReplace</value>
+  </data>
   <data name="chkWrapF.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -681,9 +687,6 @@
   <data name="pnlRegexpOptionsF.Size" type="System.Drawing.Size, System.Drawing">
     <value>464, 57</value>
   </data>
-  <data name="&gt;&gt;chkMultilineF.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="chkWrapF.Text" xml:space="preserve">
     <value>&amp;Wrap</value>
   </data>
@@ -696,14 +699,17 @@
   <data name="btnFindNextR.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
+  <data name="&gt;&gt;grpFindAll.Name" xml:space="preserve">
+    <value>grpFindAll</value>
+  </data>
   <data name="&gt;&gt;chkEcmaScriptR.Parent" xml:space="preserve">
     <value>pnlRegexpOptionsR</value>
   </data>
   <data name="&gt;&gt;chkCompiledF.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="&gt;&gt;chkIgnorePatternWhitespaceF.Parent" xml:space="preserve">
-    <value>pnlRegexpOptionsF</value>
+  <data name="toolStripMenuItem45.Size" type="System.Drawing.Size, System.Drawing">
+    <value>260, 22</value>
   </data>
   <data name="toolStripMenuItem24.Text" xml:space="preserve">
     <value>$ End of String or Line</value>
@@ -719,6 +725,9 @@
   </data>
   <data name="&gt;&gt;tabAll.Name" xml:space="preserve">
     <value>tabAll</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem40.Name" xml:space="preserve">
+    <value>toolStripMenuItem40</value>
   </data>
   <data name="&gt;&gt;chkEcmaScriptF.Name" xml:space="preserve">
     <value>chkEcmaScriptF</value>
@@ -789,11 +798,8 @@
   <data name="cmdRecentFindF.ToolTip" xml:space="preserve">
     <value>Show a list of recent search strings</value>
   </data>
-  <data name="btnReplacePrevious.Text" xml:space="preserve">
-    <value>Replace &amp;Previous</value>
-  </data>
-  <data name="chkMultilineR.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;toolStripSeparator7.Name" xml:space="preserve">
+    <value>toolStripSeparator7</value>
   </data>
   <data name="toolStripMenuItem33.Size" type="System.Drawing.Size, System.Drawing">
     <value>260, 22</value>
@@ -806,9 +812,6 @@
   </data>
   <data name="&gt;&gt;chkMultilineR.Name" xml:space="preserve">
     <value>chkMultilineR</value>
-  </data>
-  <data name="&gt;&gt;toolStripMenuItem35.Name" xml:space="preserve">
-    <value>toolStripMenuItem35</value>
   </data>
   <data name="&gt;&gt;mnuExtendedCharFindR.Type" xml:space="preserve">
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -854,9 +857,6 @@
   </data>
   <data name="btnReplaceNext.Text" xml:space="preserve">
     <value>Replace &amp;Next</value>
-  </data>
-  <data name="&gt;&gt;toolStripMenuItem52.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="toolStripMenuItem42.Text" xml:space="preserve">
     <value>? Zero or More Repetitions</value>
@@ -1119,6 +1119,9 @@
   <data name="&gt;&gt;toolStripMenuItem37.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;btnFindNextF.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
   <data name="&gt;&gt;chkCompiledF.Name" xml:space="preserve">
     <value>chkCompiledF</value>
   </data>
@@ -1148,9 +1151,6 @@
   </data>
   <data name="rdoStandardF.Location" type="System.Drawing.Point, System.Drawing">
     <value>27, 71</value>
-  </data>
-  <data name="&gt;&gt;lblReplace.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="chkMatchCaseR.ToolTip" xml:space="preserve">
     <value />
@@ -1248,8 +1248,8 @@
   <data name="&gt;&gt;cmdExtCharAndRegExFindR.Name" xml:space="preserve">
     <value>cmdExtCharAndRegExFindR</value>
   </data>
-  <data name="&gt;&gt;cmdRecentFindR.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="btnReplacePrevious.Text" xml:space="preserve">
+    <value>Replace &amp;Previous</value>
   </data>
   <data name="&gt;&gt;lblSearchTypeF.ZOrder" xml:space="preserve">
     <value>10</value>
@@ -1257,8 +1257,8 @@
   <data name="&gt;&gt;btnFindNextR.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem54.Name" xml:space="preserve">
-    <value>toolStripMenuItem54</value>
+  <data name="&gt;&gt;chkWholeWordF.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="chkEcmaScriptF.Text" xml:space="preserve">
     <value>ECMA Script</value>
@@ -1286,6 +1286,9 @@
   </data>
   <data name="cmdRecentFindF.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
+  </data>
+  <data name="&gt;&gt;cmdRecentFindR.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="mnuRegExCharReplace.ToolTip" xml:space="preserve">
     <value />
@@ -1320,8 +1323,8 @@
   <data name="chkIgnoreCaseR.Location" type="System.Drawing.Point, System.Drawing">
     <value>113, 20</value>
   </data>
-  <data name="chkSearchSelectionF.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="&gt;&gt;chkCultureInvariantR.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="chkCultureInvariantF.ToolTip" xml:space="preserve">
     <value />
@@ -1386,8 +1389,8 @@
   <data name="btnFindAll.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 23</value>
   </data>
-  <data name="toolStripMenuItem29.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
+  <data name="&gt;&gt;chkIgnorePatternWhitespaceF.Parent" xml:space="preserve">
+    <value>pnlRegexpOptionsF</value>
   </data>
   <data name="chkWordStartF.ToolTip" xml:space="preserve">
     <value />
@@ -1397,6 +1400,9 @@
   </data>
   <data name="&gt;&gt;chkWholeWordR.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="lblFindF.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="chkHighlightMatches.ToolTip" xml:space="preserve">
     <value />
@@ -1427,6 +1433,9 @@
   </data>
   <data name="&gt;&gt;toolStripMenuItem16.Name" xml:space="preserve">
     <value>toolStripMenuItem16</value>
+  </data>
+  <data name="chkWrapR.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;toolStripMenuItem24.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1475,6 +1484,9 @@
   </data>
   <data name="toolStripMenuItem41.Text" xml:space="preserve">
     <value>+ One or More Repetitions</value>
+  </data>
+  <data name="rdoExtendedR.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="toolStripMenuItem26.Text" xml:space="preserve">
     <value>\n Line Feed</value>
@@ -1590,8 +1602,8 @@
   <data name="&gt;&gt;chkWordStartF.Name" xml:space="preserve">
     <value>chkWordStartF</value>
   </data>
-  <data name="rdoExtendedF.Text" xml:space="preserve">
-    <value>E&amp;xtended (\n, \r, \t, \0)</value>
+  <data name="toolStripMenuItem29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>260, 22</value>
   </data>
   <data name="chkWrapR.ToolTip" xml:space="preserve">
     <value />
@@ -1610,9 +1622,6 @@
   </data>
   <data name="chkRightToLeftR.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
-  </data>
-  <data name="&gt;&gt;chkMatchCaseF.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="toolStripMenuItem48.Size" type="System.Drawing.Size, System.Drawing">
     <value>173, 22</value>
@@ -1734,8 +1743,8 @@
   <data name="chkSearchSelectionR.Location" type="System.Drawing.Point, System.Drawing">
     <value>375, 71</value>
   </data>
-  <data name="chkWrapR.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;chkExplicitCaptureR.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="cmdExtCharAndRegExFindF.Text" xml:space="preserve">
     <value>&gt;</value>
@@ -1851,9 +1860,6 @@
   <data name="chkCompiledR.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
   </data>
-  <data name="&gt;&gt;toolStripSeparator7.Name" xml:space="preserve">
-    <value>toolStripSeparator7</value>
-  </data>
   <data name="tpgReplace.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -1863,14 +1869,8 @@
   <data name="tTabToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
     <value>174, 22</value>
   </data>
-  <data name="&gt;&gt;chkWholeWordF.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;statusStrip.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;chkExplicitCaptureR.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="rdoExtendedF.Text" xml:space="preserve">
+    <value>E&amp;xtended (\n, \r, \t, \0)</value>
   </data>
   <data name="chkRightToLeftR.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1920,9 +1920,6 @@
   <data name="&gt;&gt;chkCompiledF.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;chkCultureInvariantR.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="chkCompiledR.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -1956,8 +1953,8 @@
   <data name="toolStripMenuItem11.Size" type="System.Drawing.Size, System.Drawing">
     <value>260, 22</value>
   </data>
-  <data name="rdoExtendedR.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;lblReplace.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tpgFind.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -2025,9 +2022,6 @@
   <data name="&gt;&gt;lblReplace.Parent" xml:space="preserve">
     <value>tpgReplace</value>
   </data>
-  <data name="chkSinglelineF.Location" type="System.Drawing.Point, System.Drawing">
-    <value>279, 37</value>
-  </data>
   <data name="&gt;&gt;chkSinglelineR.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -2069,9 +2063,6 @@
   </data>
   <data name="&gt;&gt;toolStripMenuItem44.Name" xml:space="preserve">
     <value>toolStripMenuItem44</value>
-  </data>
-  <data name="&gt;&gt;grpFindAll.Parent" xml:space="preserve">
-    <value>tpgFind</value>
   </data>
   <data name="grdOptionsR.ToolTip" xml:space="preserve">
     <value />
@@ -2135,6 +2126,9 @@
   </data>
   <data name="lblFindR.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="toolStripMenuItem20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>260, 22</value>
   </data>
   <data name="lblSearchTypeF.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 52</value>
@@ -2259,8 +2253,8 @@
   <data name="&gt;&gt;pnlRegexpOptionsF.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="toolStripMenuItem45.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
+  <data name="&gt;&gt;toolStripMenuItem35.Name" xml:space="preserve">
+    <value>toolStripMenuItem35</value>
   </data>
   <data name="&gt;&gt;toolStripMenuItem53.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2325,8 +2319,8 @@
   <data name="txtFindR.Location" type="System.Drawing.Point, System.Drawing">
     <value>59, 6</value>
   </data>
-  <data name="&gt;&gt;btnFindNextF.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;chkMatchCaseF.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;tTabToolStripMenuItem1.Name" xml:space="preserve">
     <value>tTabToolStripMenuItem1</value>
@@ -2352,11 +2346,11 @@
   <data name="&gt;&gt;mnuRegExCharFindR.Name" xml:space="preserve">
     <value>mnuRegExCharFindR</value>
   </data>
-  <data name="lblFindF.ToolTip" xml:space="preserve">
-    <value />
+  <data name="nameToolStripMenuItem.Text" xml:space="preserve">
+    <value>$(Name) Named Group</value>
   </data>
-  <data name="toolStripMenuItem20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
+  <data name="chkSinglelineF.Location" type="System.Drawing.Point, System.Drawing">
+    <value>279, 37</value>
   </data>
   <data name="&gt;&gt;toolStripMenuItem37.Name" xml:space="preserve">
     <value>toolStripMenuItem37</value>
@@ -2556,8 +2550,8 @@
   <data name="&gt;&gt;toolStripSeparator2.Name" xml:space="preserve">
     <value>toolStripSeparator2</value>
   </data>
-  <data name="chkWrapF.Location" type="System.Drawing.Point, System.Drawing">
-    <value>375, 52</value>
+  <data name="grpFindAll.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
   <data name="&gt;&gt;chkEcmaScriptF.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2661,8 +2655,8 @@
   <data name="&gt;&gt;chkWordStartF.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;mnuRecentReplace.Name" xml:space="preserve">
-    <value>mnuRecentReplace</value>
+  <data name="chkMultilineR.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;toolStripMenuItem24.Name" xml:space="preserve">
     <value>toolStripMenuItem24</value>
@@ -2682,6 +2676,9 @@
   <data name="chkIgnoreCaseR.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 17</value>
   </data>
+  <data name="&gt;&gt;chkIgnorePatternWhitespaceR.Parent" xml:space="preserve">
+    <value>pnlRegexpOptionsR</value>
+  </data>
   <data name="toolStripMenuItem42.Size" type="System.Drawing.Size, System.Drawing">
     <value>260, 22</value>
   </data>
@@ -2700,8 +2697,8 @@
   <data name="&gt;&gt;toolStripSeparator6.Name" xml:space="preserve">
     <value>toolStripSeparator6</value>
   </data>
-  <data name="&gt;&gt;grpFindAll.Name" xml:space="preserve">
-    <value>grpFindAll</value>
+  <data name="chkSearchSelectionR.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="&gt;&gt;cmdRecentFindF.Name" xml:space="preserve">
     <value>cmdRecentFindF</value>
@@ -2738,6 +2735,9 @@
   </data>
   <data name="toolStripMenuItem40.Size" type="System.Drawing.Size, System.Drawing">
     <value>260, 22</value>
+  </data>
+  <data name="rdoRegexF.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 17</value>
   </data>
   <data name="pnlRegexpOptionsF.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2829,8 +2829,8 @@
   <data name="txtFindF.Size" type="System.Drawing.Size, System.Drawing">
     <value>370, 21</value>
   </data>
-  <data name="chkIgnorePatternWhitespaceF.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 17</value>
+  <data name="&gt;&gt;toolStripMenuItem27.Name" xml:space="preserve">
+    <value>toolStripMenuItem27</value>
   </data>
   <data name="&gt;&gt;mnuRegExCharReplace.Type" xml:space="preserve">
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2853,8 +2853,8 @@
   <data name="btnFindPreviousR.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="rdoRegexF.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 17</value>
+  <data name="chkSearchSelectionF.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="&gt;&gt;rdoStandardR.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2892,8 +2892,8 @@
   <data name="chkRightToLeftF.Text" xml:space="preserve">
     <value>Right To Left</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem27.Name" xml:space="preserve">
-    <value>toolStripMenuItem27</value>
+  <data name="&gt;&gt;statusStrip.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="&gt;&gt;rdoRegexR.Parent" xml:space="preserve">
     <value>tpgReplace</value>
@@ -2952,14 +2952,14 @@
   <data name="nameToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>173, 22</value>
   </data>
-  <data name="&gt;&gt;chkIgnorePatternWhitespaceR.Parent" xml:space="preserve">
-    <value>pnlRegexpOptionsR</value>
+  <data name="rdoRegexF.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="toolStripSeparator8.Size" type="System.Drawing.Size, System.Drawing">
     <value>257, 6</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem21.Name" xml:space="preserve">
-    <value>toolStripMenuItem21</value>
+  <data name="&gt;&gt;grpFindAll.Parent" xml:space="preserve">
+    <value>tpgFind</value>
   </data>
   <data name="&gt;&gt;rdoExtendedR.Parent" xml:space="preserve">
     <value>tpgReplace</value>
@@ -2997,8 +2997,8 @@
   <data name="&gt;&gt;toolStripMenuItem46.Name" xml:space="preserve">
     <value>toolStripMenuItem46</value>
   </data>
-  <data name="grpFindAll.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="chkIgnorePatternWhitespaceR.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="rdoExtendedF.ToolTip" xml:space="preserve">
     <value />
@@ -3051,8 +3051,8 @@
   <data name="chkExplicitCaptureR.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="pnlRegexpOptionsR.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="btnFindPreviousF.Text" xml:space="preserve">
+    <value>Find &amp;Previous</value>
   </data>
   <data name="toolStripMenuItem22.Text" xml:space="preserve">
     <value>? As Few as Possible (i.e. *?, +? or ??)</value>
@@ -3090,8 +3090,8 @@
   <data name="&gt;&gt;tpgReplace.Name" xml:space="preserve">
     <value>tpgReplace</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem40.Name" xml:space="preserve">
-    <value>toolStripMenuItem40</value>
+  <data name="&gt;&gt;toolStripMenuItem52.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;rdoRegexF.ZOrder" xml:space="preserve">
     <value>11</value>
@@ -3178,7 +3178,7 @@
     <value>86</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en</value>
+    <value>fi</value>
   </metadata>
   <metadata name="mnuRegExCharFindF.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>223, 56</value>

@@ -4,3 +4,9 @@
 *.sln.docstates
 obj/
 .vs/
+bin/
+packages/
+NuGet.log
+*.nupkg
+NuGet.Packager/lib/net45/*.dll
+NuGet.Packager/lib/net45/*.xml

@@ -8,5 +8,6 @@ bin/
 packages/
 NuGet.log
 *.nupkg
+*.nupkg.bak
 NuGet.Packager/lib/net45/*.dll
 NuGet.Packager/lib/net45/*.xml

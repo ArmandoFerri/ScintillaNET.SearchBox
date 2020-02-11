@@ -3,3 +3,4 @@
 *.user
 *.sln.docstates
 obj/
+.vs/

@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>ScintillaNet.SearchBox</id>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <title>Find and Replace Dialog for ScintillaNet</title>
     <authors>Armando Ferri</authors>
     <owners>Steve Towner</owners>
@@ -21,9 +21,6 @@
     <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
     <copyright>Copyright Steve Towner 2017</copyright>
     <dependencies>
-      <group targetFramework="net40">
-        <dependency id="log4net" version="1.2.10" />
-      </group>
     </dependencies>
     <references></references>
     <tags></tags>
